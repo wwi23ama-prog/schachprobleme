@@ -1,0 +1,48 @@
+= Schachprobleme
+
+In diesem Repo gibt es Aufgaben zur Lösung des n-Damen-Problems
+
+== Struktur
+
+.Package `board`
+--
+Im Package `board` befindet sich der Spielfeld-Datentyp, der schon
+aus früheren Aufgaben bekannt ist.
+Hier ist nichts zu tun, diese Funktionen sind lediglich zu benutzen.
+--
+
+.Package `queens`
+--
+Im Package `queens` befinden sich die Funktionen zur Lösung
+des n-Damen-Problems.
+
+* Datei `queenlogic.go`:
+  Hier sind Funktionen zu implementieren, die prüfen, ob eine
+  Dame auf ein Feld gesetzt werden kann, ohne dass sie eine andere
+  Dame schlägt.
+
+  Diese Funktionen müssen nicht unbedingt rekursiv sein,
+  hier geht es auch darum, die Logik zu verstehen und zu sehen,
+  wie Code wiederverwendet werden kann.
+
+* Datei `solvequeens.go`:
+  Hier wird die eigentliche Lösung des n-Damen-Problems implementiert.
+  Diese Funktion ist rekursiv und setzt das Backtracking-Prinzip um.
+  Innerhalb der Funktion können aber durchaus auch Schleifen verwendet werden.
+
+  Hier sehen wir ein Beispiel, wie Rekursion in komplexerem Umfeld
+  eingesetzt werden kann.
+--
+
+== Weiterführende Aufgaben
+
+.Springer-Problem
+--
+Überlegen Sie sich, wie auf ähnliche Art und Weise das Springer-Problem
+gelöst werden kann.
+
+* Was für Logik-Funktionen werden gebraucht?
+* Was ist das grundsätzliche Schema für eine Lösung.
+* Was für grundlegende Probleme ergeben sich,
+  deren Lösung derzeit noch sehr umständlich ist?
+--
