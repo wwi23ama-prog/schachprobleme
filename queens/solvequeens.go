@@ -14,22 +14,6 @@ func SolveQueensFromRow(b board.Board, row int) bool {
 	// Setze eine Dame und versuche, das Problem ab der nächsten Zeile zu lösen.
 	// Gelingt dies, ist das Problem gelöst.
 	// Gelingt dies nicht, entferne die Dame wieder und versuche die nächste Spalte.
-	if row >= b.Rows() {
-		return true
-	}
-
-	for col := 0; col < b.Cols(); col++ {
-		if QueenAllowed(b, row, col) {
-			b[row][col] = "*"
-			if SolveQueensFromRow(b, row+1) {
-				return true
-			}
-			b[row][col] = " "
-		}
-	}
-
-	// Wenn das Problem an dieser Stelle immer noch nicht gelöst wurde,
-	// ist es in der aktuellen Konfiguration gar nicht lösbar.
 	return false
 }
 
@@ -44,5 +28,7 @@ func SolveQueens(b board.Board) bool {
 	// eine zweite Funktion, die die erste Funktion mit den richtigen
 	// Parametern aufruft, so dass diese Parameter bei der Benutzung
 	// der Funktion nicht mehr bekannt sein müssen.
-	return SolveQueensFromRow(b, 0)
+
+	// TODO
+	return false
 }

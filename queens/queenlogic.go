@@ -7,14 +7,18 @@ import "github.com/wwi23ama-prog/schachprobleme/board"
 func RowAllowed(b board.Board, row int) bool {
 	// Benutzen Sie die Funktion RowContainsOnly aus dem Paket board.
 	// Prüfen Sie, ob in der Zeile nur Leerzeichen vorkommen.
-	return b.RowContainsOnly(row, " ")
+
+	// TODO
+	return false
 }
 
 // ColAllowed erwartet ein Spielfeld und eine Spaltennummer.
 // Die Funktion liefert true, falls in dieser Spalte noch eine Dame gesetzt werden darf.
 func ColAllowed(b board.Board, col int) bool {
 	// Benutzen Sie die Funktion ColContainsOnly aus dem Paket board.
-	return b.ColContainsOnly(col, " ")
+
+	// TODO
+	return false
 }
 
 // DiagRightAllowed erwartet ein Spielfeld und Koordinaten.
@@ -24,7 +28,9 @@ func DiagRightAllowed(b board.Board, row, col int) bool {
 	// Benutzen Sie die Funktion DiagRightContainsOnly aus dem Paket board.
 	// Diese Funktion erwartet die Spalte, in der diese Diagonale ganz oben
 	// beginnt. Diese Spalte müssen Sie hier berechnen.
-	return b.DiagRightContainsOnly(col-row, " ")
+
+	// TODO
+	return false
 }
 
 // DiagLeftAllowed erwartet ein Spielfeld und Koordinaten.
@@ -32,7 +38,9 @@ func DiagRightAllowed(b board.Board, row, col int) bool {
 // von rechts oben nach links unten verläuft, noch eine Dame gesetzt werden darf.
 func DiagLeftAllowed(b board.Board, row, col int) bool {
 	// Benutzen Sie die Funktion DiagLeftContainsOnly aus dem Paket board.
-	return b.DiagLeftContainsOnly(col+row, " ")
+
+	// TODO
+	return false
 }
 
 // QueenAllowed erwartet ein Spielfeld und Koordinaten.
@@ -40,8 +48,7 @@ func DiagLeftAllowed(b board.Board, row, col int) bool {
 func QueenAllowed(b board.Board, row, col int) bool {
 	// Eine Dame darf gesetzt werden, wenn die Zeile,
 	// die Spalte und beide Diagonalen frei sind.
-	return RowAllowed(b, row) &&
-		ColAllowed(b, col) &&
-		DiagRightAllowed(b, row, col) &&
-		DiagLeftAllowed(b, row, col)
+
+	// TODO
+	return false
 }
